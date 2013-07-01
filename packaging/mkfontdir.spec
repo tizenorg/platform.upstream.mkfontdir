@@ -6,6 +6,7 @@ Summary:        Utility to create index of X font files
 Url:            http://xorg.freedesktop.org/
 Group:          System/X11/Utilities
 Source0:        http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source1001: 	mkfontdir.manifest
 BuildRequires:  pkg-config
 BuildRequires:  pkgconfig(xorg-macros) >= 1.8
 # mkfontdir is just a wrapper around mkfontscale and won't do anything on it's own.
@@ -19,6 +20,7 @@ around the mkfontscale program, which must be built and installed first.
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 %configure
@@ -28,6 +30,7 @@ make %{?_smp_mflags}
 %make_install
 
 %files
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %doc ChangeLog COPYING README
 %{_bindir}/mkfontdir
