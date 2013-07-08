@@ -1,0 +1,9 @@
+Change-Id: I5e93b821fa2cbf208952a883b1587d1265276fd9
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Code-Review+1: Michael Demeter <michael.demeter@intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:37:26 -0700
+Reviewed-on: https://review.tizen.org/gerrit/5210
+Project: platform/upstream/mkfontdir
+Branch: refs/heads/tizen
